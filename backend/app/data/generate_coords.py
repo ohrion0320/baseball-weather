@@ -40,7 +40,7 @@ for stadium in stadiums:
     else:
         print(f"⚠️ 주소 변환 실패: {stadium['name']}")
 
-with open("stadiums.json", "w", encoding="utf-8") as f:
+with open("backend/app/data/stadiums.json", "w", encoding="utf-8") as f:
     json.dump(result, f, ensure_ascii=False, indent=2)
 
 print("✅ stadiums.json 파일 저장 완료!")

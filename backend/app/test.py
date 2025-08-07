@@ -1,7 +1,7 @@
 import json
 from weather import get_weather_by_coords
 
-with open("data/stadiums.json", "r", encoding="utf-8") as f:
+with open("backend/app/data/stadiums.json", "r", encoding="utf-8") as f:
     stadiums = json.load(f)
 
 for stadium in stadiums:
